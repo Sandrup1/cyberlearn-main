@@ -1,0 +1,66 @@
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  width: 18rem; /* w-72 */
+  flex-shrink: 0;
+  border-right: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.admin-sidebar-header {
+  padding: 1.5rem; /* px-6 py-6 */
+}
+
+.admin-sidebar-brand {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 800; /* font-extrabold */
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* tracking-widest */
+  color: #111827; /* text-gray-900 */
+}
+
+.admin-sidebar-tag {
+  margin-top: 0.25rem; /* mt-1 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600;
+  color: #6b7280; /* text-gray-500 */
+}
+
+.admin-sidebar-nav {
+  padding: 0 0.75rem 1.5rem 0.75rem; /* px-3 pb-6 */
+}
+
+.admin-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* space-y-1 */
+}
+
+.admin-sidebar-item {
+  display: block;
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.75rem 1rem; /* px-4 py-3 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 700; /* font-bold */
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.admin-sidebar-item.inactive {
+  color: #374151; /* text-gray-700 */
+}
+
+.admin-sidebar-item.inactive:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+  color: #111827; /* hover:text-gray-900 */
+}
+
+.admin-sidebar-item.active {
+  background-color: #4f46e5; /* bg-indigo-600 */
+  color: #ffffff; /* text-white */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+}

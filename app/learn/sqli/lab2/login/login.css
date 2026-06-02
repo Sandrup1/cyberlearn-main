@@ -1,0 +1,164 @@
+.login-lab-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem; /* p-8 */
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.login-lab-card {
+  max-width: 64rem; /* max-w-5xl */
+  width: 100%;
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  border-radius: 0.75rem; /* rounded-xl */
+  padding: 3rem; /* p-12 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.login-lab-header {
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.login-lab-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800;
+  margin-bottom: 1.5rem; /* mb-6 */
+  line-height: 1.25;
+}
+
+.login-lab-status-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.login-lab-badge {
+  border: 2px solid #000000;
+  padding: 0.25rem 1rem; /* px-4 py-1 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+}
+
+.login-lab-solved-indicator {
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 9999px;
+}
+
+.login-lab-solved-indicator.solved {
+  border-color: #000000;
+  color: #000000;
+  background-color: #f3f4f6;
+}
+
+.login-lab-solved-indicator.unsolved {
+  border-color: #d1d5db; /* border-gray-300 */
+  color: #9ca3af; /* text-gray-400 */
+}
+
+.login-lab-description {
+  color: #374151; /* text-gray-800 */
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75;
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+/* space-y-4 */
+.login-lab-description > * + * {
+  margin-top: 1rem;
+}
+
+.login-lab-code-inline {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background-color: #f3f4f6; /* bg-gray-100 */
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.login-form-box {
+  max-width: 36rem; /* max-w-xl */
+  background-color: #f9fafb; /* bg-gray-50 */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  padding: 2rem; /* p-8 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.login-form-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+  margin-bottom: 1.5rem; /* mb-6 */
+  margin-top: 0;
+}
+
+.login-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* gap-5 */
+}
+
+.login-field-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* mb-2 */
+  color: #374151;
+}
+
+.login-field-input {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 0.75rem; /* p-3 */
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 0.375rem;
+}
+
+.login-field-input:focus {
+  border-width: 2px;
+}
+
+.login-submit-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.75rem 0; /* py-3 */
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.login-submit-btn:hover {
+  background-color: #1f2937; /* hover:bg-gray-800 */
+}
+
+.login-submit-btn:active {
+  transform: scale(0.98);
+}
+
+.login-status-message {
+  margin-top: 1.5rem; /* mt-6 */
+  font-weight: 700;
+  font-size: 0.875rem; /* text-sm */
+}
+
+.login-lab-footer {
+  margin-top: 4rem; /* mt-16 */
+  border-top: 1px solid #f3f4f6; /* border-gray-100 */
+  padding-top: 1.5rem; /* pt-6 */
+  font-size: 0.625rem; /* text-[10px] */
+  font-weight: 700;
+  color: #d1d5db; /* text-gray-300 */
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}

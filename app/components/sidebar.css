@@ -1,0 +1,111 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  width: 16rem; /* w-64 */
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1.5rem; /* p-6 */
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-right: 1px solid #e5e7eb;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  margin-bottom: 2.5rem; /* mb-10 */
+  color: #111827; /* text-gray-900 */
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-link-btn {
+  padding: 0.75rem; /* p-3 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.sidebar-link-btn.primary {
+  color: #000000;
+}
+
+.sidebar-link-btn.primary:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.sidebar-link-btn.secondary {
+  color: #4b5563; /* text-gray-600 */
+}
+
+.sidebar-link-btn.secondary:hover {
+  background-color: #f3f4f6;
+}
+
+.sidebar-collapse-btn {
+  width: 100%;
+  padding: 0.75rem; /* p-3 */
+  border-radius: 0.5rem;
+  color: #4b5563;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.15s ease-in-out;
+  outline: none;
+}
+
+.sidebar-collapse-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.modules-list {
+  margin-top: 0.5rem; /* mt-2 */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* space-y-1 */
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  padding: 0.5rem; /* p-2 */
+}
+
+.loading-text, .empty-text {
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.module-link-item {
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 0.5rem; /* px-2 py-2 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600;
+  color: #374151; /* text-gray-700 */
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.module-link-item:hover {
+  background-color: #ffffff;
+  color: #111827; /* text-gray-900 */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
