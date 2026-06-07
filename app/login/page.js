@@ -112,14 +112,8 @@ export default function Login() {
           />
 
           <input
-            type="password"
-            placeholder="Password"
-            required
-            className={styles.input}
-            onChange={(e) =>
-              setForm({
-                ...form,
-                password: e.target.value,
+            type="password" placeholder="Password" required className={styles.input}
+            onChange={(e) => setForm({ ...form, password: e.target.value,
               })
             }
           />

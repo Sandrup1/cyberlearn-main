@@ -48,7 +48,7 @@ export default function Sidebar() {
 
   return (
     <div className="sidebar">
-      <h1 className="sidebar-brand">CyberLearn AI</h1>
+      <h1 className="sidebar-brand">CyberLearn</h1>
 
       <div className="sidebar-menu">
         <Link href="/dashboard" className="sidebar-link">
